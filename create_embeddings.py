@@ -45,7 +45,7 @@ for name in names:
 
     # write to file
     print("writing output - " + time.asctime())
-    with open(root + name + '.pkl', 'wb') as out_file:
+    with open(root + 'embeddings_' + name + '.pkl', 'wb') as out_file:
         pickle.dump(out, out_file)
 
 print("finished - ", time.asctime())
